@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Basic Web page
+Use: web page template
+Author: Trent Grider
+School/Term: Southern Illinois University, Spring 2023
+Developed: February 19, 2023
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+    <title>Horse Trailers LLC</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Sales and rentals of premium horse trailers">
+    <meta name="keywords" content="trailers, horses, rentals, sales">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slicknav.css">
+    <link href="Main.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="doirvy9q.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').slicknav();
+        });
+    </script>
+</head>
+<body class="page">
+    <!--Shop name and adress with discription-->
+    <header>
+        <h1>Order Confirmed</h1>
+    </header>
+
+    <!--Top navigation Bar-->
+    <div class="menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="trailers.htm">Trailers</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+        </ul>
+    </div>
+    <main>
+
+        <h2>Thank you for contacting us. We will respond to you inquiry as soon as we can. While you wait on our timely response please checkout our <a href="sales.htm">latest inventory</a></h2>
+
+    </main>
+    <!--Footer Page Navigation-->
+    <footer class="response_footer">
+        <p style="color:white">
+            <a href="index.htm">Home</a>
+            <a href="trailers.htm">Trailers</a>
+            <a href="rentals.htm">Rentals</a>
+            <a href="contact.htm">Contact Us</a>
+        </p>
+        <p>Horse Trailers LLC 1234 W Main Street Carbondale, IL 62902 618-555-5555</p>
+    </footer>
+</body>
+</html>

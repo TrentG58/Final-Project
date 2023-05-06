@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Basic Web page
+Use: web page template
+Author: Trent Grider
+School/Term: Southern Illinois University, Spring 2023
+Developed: February 19, 2023
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+    <title>Bicycle Services</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Bicycle shop offering sales and rentals">
+    <meta name="keywords" content="bicycle, sales, rentals, service">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slicknav.css">
+    <link href="BikeStyle.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="Allez.jpg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').slicknav();
+        });
+    </script>
+</head>
+<body class="page">
+    <!--Shop name and adress with discription-->
+    <header>
+        <h1>Bicycle Services</h1>
+    </header>
+
+    <!--Top navigation Bar-->
+    <div class="menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="trailers.htm">Trailers</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+        </ul>
+    </div>
+    <main>
+        <div>
+            <h1>Bicycle Service and Repair</h1>
+            <p>Whether you need your broken spoke replaced or a complete overhaul that makes your bicycle run and look even better than new, we have you covered. When you bring you bicycle in for serivce we provide free estimates so that there is no suprise vharges. We also offer a monthly membership that covers basic maintenance. Contact our service department for all your needs.</p>
+        </div>
+
+        <div class="service_row">
+            <div class="service_column">
+                <h2>Basic Maintenance</h2>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Time Estimate</th>
+                        <th>Cost Estimate</th>
+                    </tr>
+                    <tr>
+                        <td>Safety Checks</td>
+                        <td>A safety check of all the main working parts of a bike, moving from the front hub back.</td>
+                        <td>15 Minutes</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>Brake Adjustments</td>
+                        <td>Brake calipers and brake pads can get jarred out of proper position as a result of aggressive riding, accidents or crashes. They should be checked to ensure a safe cycle.</td>
+                        <td>30 Minutes</td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                        <td>Clean up and Lube</td>
+                        <td>The chain and drivetrain are typically the dirtiest parts of your bike, and this dirt is bad news for bike longevity and performance. To extend the life of you bicycle get a complete detailed cleaning of the drive train components</td>
+                        <td>30 Minutes</td>
+                        <td>$40</td>
+                    </tr>
+                    <tr>
+                        <td>Tire Repair</td>
+                        <td>Flat repair or tire replacement</td>
+                        <td>30 Minutes</td>
+                        <td>$30+</td>
+                    </tr>
+                    <tr>
+                        <td>Seat and Handlebar Adjustments</td>
+                        <td>Let us ensure that your seat and handlebars are adjusted correctly to fit your height</td>
+                        <td>30 Minutes</td>
+                        <td>$30</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="service_column">
+                <h2>Part Replacement</h2>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Time Estimate</th>
+                        <th>Cost Estimate</th>
+                    </tr>
+                    <tr>
+                        <td>Cable Replacement</td>
+                        <td>Replace you cables for smoother shifting and stopping.</td>
+                        <td>1 Hour</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Parts Replacement</td>
+                        <td>We repair or replace all parts of your bicycle</td>
+                        <td>Varies</td>
+                        <td>Part Cost+</td>
+                    </tr>
+                    <tr>
+                        <td>Repair Bike Chain</td>
+                        <td>Whether you need you chain shortened or replaced we have you covered</td>
+                        <td>45 Minutes</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Calibrate Gears</td>
+                        <td>If your bike has shifting issues, check that your gears are properly indexed. A basic indexing adjustment will make your shifts fast and precise.</td>
+                        <td>45 Minutes</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Adjust Wheel Hubs</td>
+                        <td>The wheel hub assembly keeps your wheel attached to your bicycle and allows the wheels to freely turn enabling you to safely steer. Get you hub assembly checked to ensure a safe ride.</td>
+                        <td>45 Minutes</td>
+                        <td>$40</td>
+                    </tr>
+                    <tr>
+                        <td>Other Miscellaneous Repairs</td>
+                        <td>We repair or replace all parts of your bicycle</td>
+                        <td>Varies</td>
+                        <td>Part Cost+</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!--Page Navigation-->
+    <footer class="service_footer">
+        <p style="color:white">
+            <a href="index.htm">Home</a>
+            <a href="rentals.htm">Rentals</a>
+            <a href="sales.htm">Sales</a>
+            <a href="services.htm">Services</a>
+            <a href="contact.htm">Contact Us</a>
+        </p>
+        <p style="color:white">Grider's Bicycles 1234 W Main Street Carbondale, IL 62902 618-555-5555</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,336 @@
+﻿@charset "utf-8";
+/*Email section*/
+html {
+    margin: .25%;
+}
+
+h2, h3, h4, h5, h6 {
+    padding: 10px;
+}
+
+/*Heading Background*/
+header {
+    padding: 10px;
+    text-align: center;
+    background: #275682;
+    color: white;
+}
+
+p {
+    font-size: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/*Bicycle List*/
+.List {
+    font-size: 150%;
+    padding-left: .5%;
+}
+/*the entire body*/
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: aliceblue;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+/*Home Page Pic/Caption*/
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture {
+    order: -1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 280px;
+    background: rgb(52, 152, 219);
+    color: white;
+    padding: 10px 5px 10px 5px;
+}
+
+    .picture:hover {
+        background-image: url("riding.png");
+        display: inline-block;
+        border: solid blue;
+        border-radius: 2.5%;
+    }
+
+figcaption {    
+    text-align: center;
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    font-size: .75em;
+    width: 23%;
+}
+
+.Riding {
+    position: relative;
+    left: 2.5%;
+    top: 15px;
+    width: 40%;
+}
+
+    .Riding .rollimg2 {
+        display: none;
+        border: solid blue;
+        border-radius: 2.5%;
+        position: absolute;
+        top: 15px;
+        left: 2.5%;
+        width: 40%;
+    }
+
+    .Riding:hover .rollimg2 {
+        display: inline;
+    }
+/*End Home Page Pic/Caption*/
+
+.Terms {
+    width: 614px;
+    height: 110px;
+    overflow: auto;
+}
+
+/*Navigation Menu*/
+#nav_menu ul {
+    display: flex;
+    list-style: none;
+    padding: 1em 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+#nav_menu li {
+    display: inline;
+    padding: 0 1.5em;
+    border-right: 2px solid black;
+    font-size: 100%;
+}
+
+    #nav_menu li a:hover {
+        color: black;
+        background-color: lightgoldenrodyellow;
+    }
+
+#nav_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav_menu {
+    flex-direction: column;
+}
+
+#mobile_menu {
+    display: none;
+}
+/*End Nav Menu*/
+
+.Shopname {
+    font-size: 350%;
+    color: black;
+    padding-left: 1%;
+}
+/*Footer*/
+
+footer {
+    clear: both;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 12pt;
+    width: 100%;
+    position: relative;
+    bottom: -100px;
+}
+
+    footer a:hover {
+        color: black;
+        background-color: lightgoldenrodyellow;
+    }
+
+    footer a:link, footer a:visited {
+        width: 150px;
+        margin-right: 5px;
+        color: black;
+        padding: 2px 4px 2px 4px;
+        text-decoration: none;
+    }
+/*End Footer*/
+
+.video {
+    position: relative;
+    left: 2.5%;
+    top: 15px;
+    width: 40%;
+}
+/* table layout*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: floralwhite;
+}
+
+tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 767px) {
+    /* #nav_menu is the original menu */
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    header {
+        font-size: 150%;
+    }
+
+    html {
+        padding-right: 2%;
+    }
+
+    li {
+        font-size: 125%;
+    }
+
+    p {
+        font-size: 125%;
+    }
+
+    #options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service_column {
+        width: 100%;
+    }
+
+    .Service {
+        background-image: url("cyclist.jpg");
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #row {
+        flex-basis: 50%;
+    }
+
+    #column {
+        flex-basis: 50%;
+    }
+
+    #options {
+        display: flex;
+    }
+
+    .service_row {
+        display: flex;
+    }
+}
+
+.Service {
+    background-image: url("cyclist.jpg");
+    background-size: cover;
+}
+
+.service_footer {
+    clear: both;
+    color: White;
+    text-align: center;
+    padding: 5px;
+    font-size: 12pt;
+    width: 100%;
+    position: relative;
+    bottom: -100px;
+}
+
+    .service_footer a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .service_footer a:link, .service_footer a:visited {
+        width: 150px;
+        margin-right: 5px;
+        color: white;
+        padding: 2px 4px 2px 4px;
+        text-decoration: none;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+.service_row {
+    display: flex;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.service_column {
+    flex: 50%;
+    padding: 5px;
+}
+
+.Aboutus {
+    background-image: url("AboutUs.jpg");
+    background-size: cover;
+}
+
+.response_footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+    .response_footer a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .response_footer a:link, .service_footer a:visited {
+        width: 150px;
+        margin-right: 5px;
+        color: white;
+        padding: 2px 4px 2px 4px;
+        text-decoration: none;
+    }

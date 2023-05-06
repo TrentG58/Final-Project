@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Final Project
+Use: web page template
+Author: Trent Grider
+School/Term: Southern Illinois University, Spring 2023
+Developed: April 29, 2023
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+    <title>Horse Trailers LLC</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Sales and rentals of premium horse trailers">
+    <meta name="keywords" content="trailers, horses, rentals, sales">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slicknav.css">
+    <link href="Main.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="doirvy9q.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').slicknav();
+        });
+    </script>
+</head>
+<body class="page">
+    <!--Shop name and adress with discription-->
+    <header>
+        <h1>Horse Trailers LLC</h1>
+    </header>
+
+    <!--Top navigation Bar-->
+    <div class="menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="trailers.htm">Trailers</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+        </ul>
+    </div>
+    <main>
+        <p>
+            Welcome to Horse Trailer LLC, where we've been providing top-quality horse trailers for over 70 years. We're proud to have built a legacy of craftsmanship and reliability that has stood the test of time. As horse enthusiasts ourselves, we understand the importance of keeping your four-legged companions safe and comfortable on the road. That's why we continue to innovate and improve our trailers, so that you can have the peace of mind that comes with knowing your horses are in good hands. Thank you for choosing Horse Trailers LLC, and we look forward to serving you for another 70 years.
+        </p>
+
+        <figure>
+            <img src="riding.png" alt="Riding" class="picture">
+            <figcaption>
+                    We won’t stop creating beautiful memories while we ride together.
+            </figcaption>
+        </figure>
+
+        <h5>Not sure where to start? Join our mailing list and let us get with you!</h5>
+        <form id="form">
+            <input id="email" type="email" name="email" placeholder="Please enter your email" required>
+            <input type="submit" id="submit" value="Submit" class="btn" onclick="alert('Thank you for joining our mailing list')">
+        </form>
+    </main>
+    <!--Footer Page Navigation-->
+    <footer>
+        <p>
+            <a href="index.htm">Home</a>
+            <a href="trailers.htm">Trailers</a>
+            <a href="rentals.htm">Rentals</a>
+            <a href="contact.htm">Contact Us</a>
+        </p>
+        <p>Horse Trailers LLC 1234 W Main Street Carbondale, IL 62902 618-555-5555</p>
+    </footer>
+</body>
+</html>
